@@ -53,20 +53,28 @@ function contamination(text, char){
     } return newText;
   }
 
-  //Write a program that finds the summation of every number from 1 to num. 
-  //The number will always be a positive integer greater than 0.
+//Write a program that finds the summation of every number from 1 to num. 
+//The number will always be a positive integer greater than 0.
   
-  var summation = function (num) {
-    let sum = 0
-    for (let i = 1; i <= num; i++){
-      sum += i
-    }
-    return sum;
+var summation = function (num) {
+  let sum = 0
+  for (let i = 1; i <= num; i++){
+    sum += i
   }
+  return sum;
+}
 
-  //Write a function that accepts an integer n and a string s as parameters, 
-  //and returns a string of s repeated exactly n times.
+//Write a function that accepts an integer n and a string s as parameters, 
+//and returns a string of s repeated exactly n times.
   
-  function repeatStr (n, s) {
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+//or 
+function repeatStr (n, s) {
+  if (n > 0){
     return s.repeat(n);
+  } else {
+  return '';
+    }
 }
