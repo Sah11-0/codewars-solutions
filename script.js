@@ -57,7 +57,7 @@ function contamination(text, char){
 //The number will always be a positive integer greater than 0.
   
 var summation = function (num) {
-  let sum = 0
+  let sum = 0;
   for (let i = 1; i <= num; i++){
     sum += i
   }
@@ -77,4 +77,11 @@ function repeatStr (n, s) {
   } else {
   return '';
     }
+}
+
+//This code does not execute properly. Try to figure out why.
+
+function multiply(a, b){
+  let product = (a * b);
+  return product;
 }
