@@ -191,3 +191,12 @@ const rps = (p1, p2) => {
 //When bool is truthy, func1 should be called, otherwise call the func2.
 
 _if = (bool, func1, func2) => bool ? func1() : func2()
+
+//You get an array of numbers, return the sum of all of the positives ones.
+//Note: if there is nothing to sum, the sum is default to 0.
+
+function positiveSum(arr) {
+  let sum = 0 
+  arr.forEach(num => num > 0 && (sum += num))
+  return sum;
+}
