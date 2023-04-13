@@ -200,3 +200,9 @@ function positiveSum(arr) {
   arr.forEach(num => num > 0 && (sum += num))
   return sum;
 }
+
+//You must return false without ever actually using the word false...
+
+function ifChuckSaysSo(){
+  return !true;
+}
