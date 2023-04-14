@@ -230,3 +230,10 @@ var countSheep = function (num){
   }
   return str;
 }
+
+//Write a function that removes the spaces from the string, then return the resultant string.
+
+function noSpace(x){
+  const trimmed = x.split(' ').join('');
+    return trimmed;
+  }
