@@ -297,3 +297,11 @@ function paperwork(n, m) {
 function paperwork(n, m) {
   return n > 0 && m > 0 ? n * m : 0
 }
+
+//Write a function which converts the input string to uppercase.
+
+function makeUpperCase(str) {
+  return str.toUpperCase()
+}
+//or
+const makeUpperCase = str => str.toUpperCase()
