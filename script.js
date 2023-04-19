@@ -336,3 +336,9 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 } else if (dadYearsOld < (sonYearsOld * 2)){
 } return (sonYearsOld * 2) - dadYearsOld 
 }
+
+//Now you have to write a function that takes an argument and returns the square of it.
+
+function square(arg){
+  return Math.pow(arg,2);
+}
