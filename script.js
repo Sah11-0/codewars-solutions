@@ -40,19 +40,6 @@ var cubeChecker = function(volume, side){
   }
 }
 
-//An AI has infected a text with a character!!
-//This text is now fully mutated to this character.
-//If the text or the character are empty, return an empty string.
-//There will never be a case when both are empty as nothing is going on!!
-//Note: The character is a string of length 1 or an empty string.
-
-function contamination(text, char){
-  let newText = "";
-  for (let i = 0; i < text.length; i++) {
-    newText += char;
-    } return newText;
-  }
-
 //Write a program that finds the summation of every number from 1 to num. 
 //The number will always be a positive integer greater than 0.
   
