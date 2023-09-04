@@ -7,3 +7,7 @@ function doubleChar(str) {
     }
     return result;
   }
+
+  //or
+
+  const doubleChar = (str) => str.split("").map(e => e + e).join("");
