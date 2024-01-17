@@ -3,3 +3,7 @@
 function typeOfSum(a, b) {
     return typeof (a + b);
   }
+
+  //or
+
+  const typeOfSum = (a, b) => typeof(a + b);
