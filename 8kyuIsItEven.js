@@ -13,3 +13,14 @@ function testEven(n) {
     return false;
   }
 }
+
+//or 
+
+
+function testEven(n){
+  return !(n % 2);
+}
+
+//or
+
+const testEven = n => !(n % 2);
