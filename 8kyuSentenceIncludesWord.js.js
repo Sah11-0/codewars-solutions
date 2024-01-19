@@ -4,3 +4,9 @@ function spEng(sentence){
     const lowercasedSentence = sentence.toLowerCase()
       return lowercasedSentence.includes('english');
   }
+
+  //or
+
+  function spEng(sentence){
+    return sentence.toLowerCase().includes("english");
+  }
