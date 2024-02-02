@@ -2,3 +2,9 @@
 // If either input is an empty string, consider it as zero.
 
 sumStr = (a,b) => String(+a + +b);
+
+//or
+
+function sumStr(a,b) {
+    return String(Number(a) + Number(b));
+  }
