@@ -15,3 +15,9 @@ function twoArePositive(a, b, c) {
     
     return positiveCount === 2; 
   }
+
+  //or
+
+  function twoArePositive(a, b, c) {
+    return (a > 0) + (b > 0) + (c > 0) == 2;
+  }
