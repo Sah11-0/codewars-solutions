@@ -21,3 +21,7 @@ function twoArePositive(a, b, c) {
   function twoArePositive(a, b, c) {
     return (a > 0) + (b > 0) + (c > 0) == 2;
   }
+
+  //or
+
+  const twoArePositive = (a, b, c) => [a, b, c].filter((n) => n > 0).length === 2;
