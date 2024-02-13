@@ -4,3 +4,7 @@
 // a == !a
 
 const a = []; 
+
+//or
+
+const = '0';
