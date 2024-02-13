@@ -17,3 +17,8 @@ var calculate = function calculate(a, o, b) {
   
     return result;
   };
+
+  //or
+
+  const calculate = (a, o, b) =>
+  o === `+` ? a + b : o === `-` ? a - b : o === `*` ? a * b : o === `/` && b ? a / b : null;
