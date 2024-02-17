@@ -6,9 +6,15 @@ function multiply(number){
     return result;
 }
 
-    //or
+//or
 
 function multiply(number) {
     return number * Math.pow(5, Math.abs(number).toString().length);
 }
+
+//or
+
+const multiply = num => num * Math.pow(5, Math.abs(num).toString().length);
+
+
 
