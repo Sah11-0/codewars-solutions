@@ -16,5 +16,10 @@ function multiply(number) {
 
 const multiply = num => num * Math.pow(5, Math.abs(num).toString().length);
 
+//or
+
+const multiply = num => num * 5 ** (Math.abs(num).toString()).length
+
+
 
 
