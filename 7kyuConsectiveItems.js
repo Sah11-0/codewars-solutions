@@ -7,4 +7,4 @@ function consecutive(arr, a, b) {
       }
     } 
     return false;
-  }
+}
