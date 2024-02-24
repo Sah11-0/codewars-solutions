@@ -22,7 +22,7 @@ function i(word) {
      for (let char of word.toLowerCase()) {
        if (vowels.includes(char)) {
          vowelCount++;
-       } else if (char >= 'a' && char <= 'z') {
+       } else {
          consonantCount++;
        }
      }
