@@ -14,3 +14,7 @@ function consecutive(arr, a, b) {
 function consecutive(arr, a, b) {
   return Math.abs(arr.indexOf(a) - arr.indexOf(b)) == 1;
 }
+
+//or
+
+const consecutive = (arr, a, b) => Math.abs(arr.indexOf(a) - arr.index(b)) == 1;
