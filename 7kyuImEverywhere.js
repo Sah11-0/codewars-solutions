@@ -37,3 +37,15 @@ function i(word) {
    
      return 'i' + word;
    }
+
+
+//or
+
+function i(word) {
+    const vowels =  word.split('').filter(char => 'aeiou'.includes(char.toLowerCase()));
+    if (word[0] !== 'I' && ((word.length - vowels.length) > vowels.length) && word[0] === word[0].toUpperCase()) {
+      return `i${word}`;
+    } else {
+      return 'Invalid word';
+    }
+  }
