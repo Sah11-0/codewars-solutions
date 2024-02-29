@@ -12,3 +12,17 @@ function flickSwitch(arr) {
   //or
 
   const flickSwitch = (arr) => (flick = true, arr.map(e => e === 'flick' ? flick = !flick : flick));
+
+  //or
+
+  function flickSwitch (list) {
+    let flick = true;
+    return list.map(item => {
+       if (item === "flick") {
+         flick = !flick;
+         return flick;
+         } else {
+         return flick;
+       }
+     });
+   }
