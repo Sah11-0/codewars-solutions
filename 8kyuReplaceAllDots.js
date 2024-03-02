@@ -12,3 +12,8 @@ const replaceDots = function (str) {
   //or
 
   const replaceDots = str => str.replaceAll('.', '-')
+
+  //or
+
+  const replaceDots = str => str.split('.').join('-')
+
