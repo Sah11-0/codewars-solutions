@@ -11,11 +11,17 @@
 //     else 
 //       return false
     
-function correctTail(bod, tail){
-    let sub = bod.substr(bod.length - (tail.length))
+function correctTail(body, tail){
+    let sub = bod.substr(body.length - (tail.length))
     if (sub === tail) {
       return true;
     } else {
       return false;
     }
+  }
+
+  //or
+
+  function correctTail(body, tail) {  
+    return body.substr(body.length - tail.length) === tail;  
   }
