@@ -12,7 +12,7 @@
 //       return false
     
 function correctTail(body, tail){
-    let sub = bod.substr(body.length - (tail.length))
+    let sub = body.substr(body.length - (tail.length))
     if (sub === tail) {
       return true;
     } else {
@@ -25,3 +25,8 @@ function correctTail(body, tail){
   function correctTail(body, tail) {  
     return body.substr(body.length - tail.length) === tail;  
   }
+
+  //or
+
+  const correctTail = (body, tail) => body.substr(body.length - tail.length) === tail; 
+  
