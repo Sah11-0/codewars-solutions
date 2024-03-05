@@ -29,4 +29,7 @@ function correctTail(body, tail){
   //or
 
   const correctTail = (body, tail) => body.substr(body.length - tail.length) === tail; 
-  
+
+//or
+
+ const correctTail = (body, tail) => body[body.length - 1] === tail;
