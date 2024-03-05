@@ -30,6 +30,6 @@ function correctTail(body, tail){
 
   const correctTail = (body, tail) => body.substr(body.length - tail.length) === tail; 
 
-//or
+  //or
 
- const correctTail = (body, tail) => body[body.length - 1] === tail;
+  const correctTail = (body, tail) => body[body.length - 1] === tail;
