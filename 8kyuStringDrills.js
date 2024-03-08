@@ -11,3 +11,7 @@ function quotable(name, quote){
   function quotable(name, quote){
     return `${name} said: "${quote}"`;
   }
+
+  //or
+
+  const quotable = (name, quote) => name + ' said: "' + quote + '"'; 
