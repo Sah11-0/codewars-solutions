@@ -3,10 +3,10 @@
 //var b == "wa.rs";
 //var name == a + b;
 
-var a = "code";
-var b = "wa.rs";
-var name = a + b;
+const a = "code";
+const b = "wa.rs";
+const name = a + b;
 
 //or
 
-let name = 'codewa.rs';
+const name = 'codewa.rs';
