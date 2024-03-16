@@ -10,3 +10,10 @@ const name = a + b;
 //or
 
 const name = 'codewa.rs';
+
+
+//or
+
+const a = 'code';
+const b = 'wa.rs';
+const name = `${a}${b}`;
