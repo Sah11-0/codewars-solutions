@@ -3,3 +3,7 @@
 function buildString(...template){
     return `I like ${template.join(', ')}!`;
   }
+
+  //or
+
+  const buildString = (...template) => `I like ${template.join(', ')}!`;
