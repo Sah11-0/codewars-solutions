@@ -33,3 +33,8 @@ function getMax2()
   }
     return max;
 }
+
+//or
+
+const getMax1 = () => ({ name: 'Max Headroom' })
+const getMax2 = () => ({ name: 'Max Headroom' })
