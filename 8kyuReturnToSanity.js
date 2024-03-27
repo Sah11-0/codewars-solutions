@@ -11,3 +11,7 @@ function mystery() {
       {sanity: 'Hello'};
     return results;
   }
+
+  //or
+
+  var mystery = () => ({sanity: 'Hello'});
