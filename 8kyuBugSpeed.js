@@ -3,3 +3,7 @@
 function bugSpeed(s) {
     return Math.floor(s * 27.7778);
    }
+
+   //or
+
+const bugSpeed = s => return Math.floor(s / 0.036);
