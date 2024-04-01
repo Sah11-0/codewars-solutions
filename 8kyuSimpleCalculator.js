@@ -21,3 +21,22 @@ function calculator(a,b,sign){
   }
   return "unknown value";
 }
+
+//or
+
+function calculator(a,b,sign){
+  switch(sign)
+  {
+  case '+': 
+    return a + b;
+  case '-': 
+    return a - b;
+  case '*': 
+    return a * b;
+  case '/': 
+    return a / b;
+  default: 
+    return "unknown value";
+  }
+
+}
