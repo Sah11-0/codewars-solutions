@@ -7,3 +7,8 @@ function combineNames (first, last) {
   //or
 
 const combineNames = (first, last) => `${first} ${last}`;
+
+//or
+
+const combineNames = (...names) => names.join(' ');
+
