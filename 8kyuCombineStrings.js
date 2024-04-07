@@ -3,3 +3,7 @@
 function combineNames (first, last) {
     return first + ' ' + last;
   }
+
+  //or
+
+const combineNames = (first, last) => `${first} ${last}`;
