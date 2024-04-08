@@ -12,3 +12,8 @@ const combineNames = (first, last) => `${first} ${last}`;
 
 const combineNames = (...names) => names.join(' ');
 
+//or
+
+function combineNames (first, last) {
+  return `${first} ${last}`;
+}
