@@ -3,3 +3,8 @@
 function typeValidation(variable, type) {
     return typeof variable === type ? true : false;
   }
+
+  //or
+
+  const typeValidation = (variable, type) => typeof variable === type;
+
