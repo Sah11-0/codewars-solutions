@@ -11,3 +11,11 @@ function well(x){
       return 'Fail!';
     }
   }
+
+  //
+
+  const well = x => {
+    const count = x.filter(x => x == 'good').length;
+    return count < 1 ? 'Fail!' : 
+           count < 3 ? 'Publish!' : 'I smell a series!';
+  }
