@@ -30,3 +30,17 @@ function points(games) {
     
     return totalPoints;
 }
+
+//or
+
+function points(games) {
+    let totalPoints = 0;
+    games.map(game => {
+      if (game[0] === game[2]) {
+        total += 1;
+      } else if (game[0] > game[2]) {
+        total += 3;
+      }
+    });
+    return totalPoints;
+  }
