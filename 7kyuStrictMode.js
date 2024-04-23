@@ -3,3 +3,9 @@
 function isInStrictMode() {
     return (function() { return !this; })();
 }
+
+//or
+
+function isInStrictMode() {
+    return !this;
+  }
