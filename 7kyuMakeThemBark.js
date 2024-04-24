@@ -26,3 +26,7 @@
 Dog.prototype.bark = function() {
     return 'Woof!';
   }
+
+//or
+
+Dog.prototype.bark = () => 'Woof!';
