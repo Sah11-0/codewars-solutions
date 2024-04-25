@@ -23,7 +23,7 @@
 //     this.age   = age;
 // }
 
-Dog.prototype.bark = function() {
+Dog.prototype.bark = function(){
     return 'Woof!';
   }
 
