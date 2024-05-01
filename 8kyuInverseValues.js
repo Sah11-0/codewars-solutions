@@ -4,4 +4,10 @@
 // invert([]) == []
 // You can assume that all values are integers. Do not mutate the input array/list.
 
+function invert(array) {
+    return array.map(e => e * -1);
+  }
+
+//or
+
 const invert = array => array.map(num => -num);
