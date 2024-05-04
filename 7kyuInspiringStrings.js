@@ -23,4 +23,9 @@ function longestWord(str){
     return str.split(' ').sort((b, a) => b.length - a.length).pop();
   }
 
+  //or
+
+  const longestWord = a => a.split(' ').reduce((s,n)=> s.length > n.length ? s : n, '')
+
+
  
