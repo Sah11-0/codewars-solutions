@@ -42,3 +42,14 @@ function evalObject(value){
       case'^': return Math.pow(value.a, value.b);
     }
   }
+
+  //or
+
+  const evalObject = value => ({
+    '+': (a, b) => a + b,
+    '-': (a, b) => a - b,
+    '/': (a, b) => a / b,
+    '*': (a, b) => a * b,
+    '%': (a, b) => a % b,
+    '^': Math.pow,
+  }[value.operation](value.a, value.b));
