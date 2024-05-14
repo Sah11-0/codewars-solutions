@@ -4,3 +4,9 @@
 String.prototype.isUpperCase = function() {
     return this.valueOf() === this.toUpperCase();
   }
+
+  //or
+  
+  String.prototype.isUpperCase = function() {
+    return this.toUpperCase() === this.toString();
+  }
