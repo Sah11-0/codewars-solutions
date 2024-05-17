@@ -11,3 +11,7 @@ function bestFriend(txt, a, b) {
       }
       return true;
   }
+
+  //or
+
+const bestFriend = (txt, a, b) => txt.split(a + b).length == txt.split(a).length;
