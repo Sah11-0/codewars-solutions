@@ -10,3 +10,8 @@ function strCount(str, letter){
     }
     return count;
   }
+
+
+  function strCount(str, letter){
+    return str.split(letter).length - 1; 
+  }
