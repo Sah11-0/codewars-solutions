@@ -11,8 +11,14 @@ let count = 0;
     return count;
   }
 
-  //or
+//or
 
 function strCount(str, letter){
   return str.split(letter).length - 1; 
   }
+
+//or
+
+function strCount(str, letter){  
+  return str.split('').filter(c => c == letter).length;
+}
