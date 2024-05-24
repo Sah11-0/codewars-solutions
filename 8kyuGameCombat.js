@@ -7,3 +7,9 @@ function combat(health, damage) {
       return health - damage;
     }
   }
+
+//or
+
+function combat(health, damage) {
+	return health < damage ? 0 : health - damage
+}
