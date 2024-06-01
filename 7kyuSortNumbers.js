@@ -7,7 +7,7 @@
 // solution(null); // should return []
 
 //solution 1 
-function solution(nums){
+function solution(nums) {
     if (Array.isArray(nums)) {
       return nums.sort((a,b) => a - b);
     } else {
@@ -17,3 +17,6 @@ function solution(nums){
 
 //solution 2
 const solution = (nums) => (nums || []).sort((a,b) => (a-b));
+
+//solution 3
+const solution = (nums) => Array.isArray(nums) ? nums.sort((a,b) => a - b) : [];
