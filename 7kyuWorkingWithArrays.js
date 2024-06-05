@@ -8,3 +8,7 @@
 function withoutLast(arr) {
     return arr.slice(0, -1);
   }
+
+//or
+
+const withoutLast = arr => arr.slice(0, -1)
