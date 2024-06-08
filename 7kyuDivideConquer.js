@@ -1,7 +1,7 @@
 //CHALLENGE:
 //Given a mixed array of number and string representations of integers, add up the non-string integers and subtract the total of the string integers. Return as a number.
 
-//solution:
+//solution 1:
 function divCon(x){
     let integerSum = 0;
     let stringSum = 0;
@@ -15,3 +15,14 @@ function divCon(x){
     
     return integerSum - stringSum;
   }
+
+//solution 2:
+function divCon(x) {
+   return x.reduce((sum, current) => {
+     if (typeof current === 'number') {
+       return sum + current;
+     } else {
+       return sum - Number(current);
+     }
+   }, 0);
+ }
