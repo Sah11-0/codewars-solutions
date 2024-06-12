@@ -22,7 +22,7 @@ function isAnagram (test, original) {
 	return test.toLowerCase().split("").sort().join("") === original.toLowerCase().split("").sort().join("");
 }
 
-//solution
+//solution 3
 const isAnagram = (test, original) => {
   const word1 = test.toLowerCase().split('').sort().join('');
   const word2 = original.toLowerCase().split('').sort().join('');
