@@ -10,6 +10,5 @@ function spot(s1,s2){
         diff.push(i);
       }
     }
-    
     return diff;
   }
