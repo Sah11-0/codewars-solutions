@@ -15,3 +15,9 @@ var lengthOfSequence = function (arr, n) {
     }
     return lastIndex - firstIndex + 1;
   };
+
+//solution 2 
+var lengthOfSequence = function (arr, n) {
+  const occurences = arr.filter(item => item === n).length;
+  return occurences === 2 ? arr.lastIndexOf(n) - arr.indexOf(n) + 1 : 0;
+};
