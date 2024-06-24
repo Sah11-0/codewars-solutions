@@ -9,10 +9,7 @@ var lengthOfSequence = function (arr, n) {
       return 0;
     }
     const firstIndex = arr.indexOf(n);
-    const lastIndex = arr.lastIndexOf(n)
-    if (firstIndex === -1 || lastIndex === -1) {
-      return 0;
-    }
+    const lastIndex = arr.lastIndexOf(n);
     return lastIndex - firstIndex + 1;
   };
 
