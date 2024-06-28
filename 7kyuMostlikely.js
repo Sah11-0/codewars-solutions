@@ -6,5 +6,15 @@ function mostLikely(prob1,prob2){
     const [c, d] = prob2.split(':').map(Number);
     const p1 = a / (a + b);
     const p2 = c / (c + d);
+    
     return p1 > p2;
+  }
+
+//solution2 
+
+function mostLikely(prob1,prob2){
+    let [a, b] = prob1.split(':');
+    let [c, d] = prob2.split(':');
+    
+    return a/b > c/d;
   }
