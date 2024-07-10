@@ -6,3 +6,6 @@
 function DNAtoRNA(dna) {
     return dna.split('T').join('U');
   }
+
+//solution 2
+const DNAtoRNA = dna => dna.replace(/T/g, 'U');
