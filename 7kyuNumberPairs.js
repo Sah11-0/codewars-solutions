@@ -12,3 +12,12 @@ function getLargerNumbers(a, b) {
     }
     return newArr;
   }
+
+//solution 2 
+function getLargerNumbers(a, b) {
+  let newArr = [];
+  for ( i = 0; i < a.length; i++) {
+    newArr.push( Math.max( a[i], b[i] ) );
+  }
+  return newArr;
+}
