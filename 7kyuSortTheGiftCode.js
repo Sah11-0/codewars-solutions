@@ -4,3 +4,7 @@
 function sortGiftCode(code){
     code.split('').sort().join('')
   }
+
+//or
+
+const sortGiftCode = code => code.split('').sort().join('');
