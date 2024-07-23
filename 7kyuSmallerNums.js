@@ -15,3 +15,6 @@ function smaller(nums) {
    }
     return newArr;
    }
+
+//solution 2 
+const smaller = nums => nums.map((x, i) => nums.slice(i).filter(y => x > y).length);
