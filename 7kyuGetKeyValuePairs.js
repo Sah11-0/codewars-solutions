@@ -11,3 +11,7 @@ function keysAndValues(data){
 function keysAndValues(data){
     return [Object.keys(data), Object.values(data)];
 }
+
+//or
+
+const keysAndValues = data => [Object.keys(data), Object.values(data)];
