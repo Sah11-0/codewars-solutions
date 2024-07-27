@@ -9,3 +9,11 @@ function disemvowel(str) {
     const result = filteredChars.join('');
     return result;
   };
+
+//or
+function disemvowel(str) {
+  const splitStr = str.split('')
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  const filteredArr = splitStr.filter(e => !vowels.includes(e))
+  return filteredArr.join('');
+}
