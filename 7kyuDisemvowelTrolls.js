@@ -17,3 +17,17 @@ function disemvowel(str) {
   const filteredArr = splitStr.filter(e => !vowels.includes(e))
   return filteredArr.join('');
 }
+
+//solution 2
+function disemvowel(str) {
+  const vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']);
+  let result = '';
+
+  for (let char of str) {
+    if (!vowels.has(char)) {
+      result += char;
+    }
+  }
+
+  return result;
+}
