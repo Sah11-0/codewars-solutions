@@ -5,9 +5,9 @@ function myFunction() {
     var myObject = {
       objProperty: "string",
       objMethod: function() {
-        return myObject.objProperty;
+        return this.objProperty;
           }
     }
     
-    return myObject.objMethod();
+    return myObject;
   };
