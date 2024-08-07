@@ -13,3 +13,9 @@ function secondSymbol(s, symbol) {
   }
       return -1;
 }
+
+
+//solution 2 
+function secondSymbol(s, symbol) {
+  return s.indexOf(symbol, s.indexOf(symbol) + 1);
+}
