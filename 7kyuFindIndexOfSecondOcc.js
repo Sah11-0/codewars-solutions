@@ -19,3 +19,6 @@ function secondSymbol(s, symbol) {
 function secondSymbol(s, symbol) {
   return s.indexOf(symbol, s.indexOf(symbol) + 1);
 }
+
+//or
+const secondSymbol = (s, symbol) => s.indexOf(symbol, s.indexOf(symbol) + 1);
