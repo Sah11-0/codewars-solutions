@@ -6,3 +6,8 @@ function mergeArrays(arr1, arr2) {
     const mergedArr = arr1.concat(arr2);
     return [...new Set(mergedArr)].sort((a, b) => a - b);
   }
+
+//solution2 
+function mergeArrays(arr1, arr2) {
+  return Array.from(new Set(arr1.concat(arr2).sort((a, b) => (a - b))));
+}
