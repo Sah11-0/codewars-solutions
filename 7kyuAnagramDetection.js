@@ -3,23 +3,23 @@
 // write the function isAnagram
 
 function isAnagram(test, original) {
-    test = test.toLowerCase();
-    original = original.toLowerCase();
-    
-    if (test.length !== original.length) {
-      return false;
-    }
-    
-    let str1 = test.split("").sort().join("");
-    let str2 = original.split("").sort().join("");
-    
-    let result = (str1 === str2);
-    return result;
-  };
+  test = test.toLowerCase();
+  original = original.toLowerCase();
+
+  if (test.length !== original.length) {
+    return false;
+  }
+
+  let str1 = test.split("").sort().join("");
+  let str2 = original.split("").sort().join("");
+
+  let result = (str1 === str2);
+  return result;
+};
 
 //solution 2
-function isAnagram (test, original) {
-	return test.toLowerCase().split("").sort().join("") === original.toLowerCase().split("").sort().join("");
+function isAnagram(test, original) {
+  return test.toLowerCase().split("").sort().join("") === original.toLowerCase().split("").sort().join("");
 }
 
 //solution 3
@@ -28,4 +28,26 @@ const isAnagram = (test, original) => {
   const word2 = original.toLowerCase().split('').sort().join('');
 
   return word1 === word2;
+}
+
+//optimal solution
+function isAnagram(test, original) {
+  test = test.toLowerCase();
+  original = original.toLowerCase();
+
+  if (test.length !== original.length) return false;
+
+  const charCount = {};
+
+  for (let char of original) {
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
+
+  for (let char of test) {
+    if (!charCount[char]) return false;
+    charCount[char]--;
+  }
+
+  return true;
+
 }
