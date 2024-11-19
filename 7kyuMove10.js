@@ -22,3 +22,20 @@ function moveTen(s) {
     }
     return shiftedString;
 }
+
+//solution 2
+const alpha = 'abcdefghijklmnopqrstuvwxyz';
+const map = 'klmnopqrstuvwxyzabcdefghij';
+const moveTen = s => [...s].map(x => map[alpha.indexOf(x)]).join('');
+
+//dynamic 
+const shiftAlphabet = (shift) => {
+    const alpha = 'abcdefghijklmnopqrstuvwxyz';
+    return alpha.slice(shift) + alpha.slice(0, shift);
+};
+
+const moveDynamic = (s, shift) => {
+    const alpha = 'abcdefghijklmnopqrstuvwxyz';
+    const map = shiftAlphabet(shift);
+    return [...s].map(x => map[alpha.indexOf(x)]).join('');
+};
